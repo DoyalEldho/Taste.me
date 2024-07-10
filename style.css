@@ -1,0 +1,202 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Khula:wght@300;400;600;700;800&family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* *{
+    outline: 2px solid black;
+} */
+body{
+    background-color: rgb(221, 225, 237);
+    margin: 0;
+    padding: 0%;
+}
+.container{
+   height:100vh;
+   width:15px;
+   background-color:  rgb(255,88,62);
+   position:fixed;
+
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+
+}
+.logo{
+    display: flex;
+    margin-left: 60px;
+}
+.logo_name{
+     font-family: kanit;
+     color:rgb(50, 62, 88);
+}
+.logo img{
+    margin-top: 28px;
+    margin-left: 10px;
+}
+.navitems{
+    display: flex;
+  margin-left: 490px;
+  margin-top: 16px;
+  font-size: 18px;
+}
+ .navitems a{
+    text-decoration: none;
+    color: rgb(50, 62, 88);
+} 
+.navitems a:hover{
+  color:rgb(255,88,62);
+  text-decoration: underline;/* Add underline on hover */
+  text-decoration-thickness: 2px; /* Set the thickness of the underline */
+  text-decoration-color: rgb(255,88,62); /* Change the color of the underline */
+  text-underline-offset: 4px; /* Set the gap between the underline and the text */
+} 
+a+a{
+    margin-left: 50px;
+ }
+ .icon{
+    margin: 0px 50px;
+ }
+ .menu{
+    margin-left: 300px;
+    font-size: 25px;
+ }
+.intro{
+    margin: 10px;
+    margin-left: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.heading{
+  font-size: 130px;
+  font-stretch: expanded;
+  font-family: rubik;
+  margin-top: 60px;
+  color:rgb(50, 62, 88);
+  position: relative;
+  z-index: 10;
+}
+.left{
+    flex:1;
+    margin-top: -270px;
+
+}
+.right{
+    flex:1;
+display: flex;
+margin-top: -60px;
+margin-left: -21px;
+}
+.para1{
+    margin-top: -85px;
+    margin-left: 10px;
+    font-family: League Spartan;
+    font-size: 30px;
+    color: rgb(255,88,62);
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+.para2{
+ font-family: poppins;
+ margin-left: 10px;
+ margin-top: -10px;
+ font-size: 13px;
+ letter-spacing: 1px;
+ word-spacing: 4px;
+}
+.btn{
+    height:50px;
+    width:270px;
+    border-radius:30px;
+    background-color: rgb(255,88,62);
+    margin: 25px 10px;
+}
+.btn:hover{
+    background-color:rgb(210, 30, 30) ;
+}
+
+
+.split-image1{
+    width: 462px;
+    height: 750px;
+    background-image: url(food.png);
+    background-size: cover;
+    z-index: 1;
+    margin-top: -10px;
+    /* background-color: rgb(221, 225, 237); */
+    clip-path: polygon(0% 0, 101% -4%, 45% 90%, 35% 100%); 
+}
+.split-image2{
+    width: 768px;
+    height: 750px;
+    background-image: url(food.png); 
+    background-size: cover;
+    margin-left: -276px;
+    position: relative;
+    z-index: -10;
+    margin-top: -120px;
+    clip-path: polygon(60% 0%, 100% 0%, 100% 100%, 27% 100%);
+    translate: 80px 120px;
+    clip-path: translate(-97px, -68px) rotate(5deg);
+    transform: translate(-266px, -59px) rotate(1deg);
+}
+.menu{
+    position: relative;
+    z-index:2;
+}
+
+.media{
+   width:11px;
+   height: 121px;
+    background-color:  rgb(255,88,62);
+    margin-left: 160px;
+}
+.media-box{
+    width:350px;
+    height:120px;
+    border-radius: 20px;
+    margin-top: -200px;
+    position: relative; 
+    
+}
+.meal-img{
+    height: 120px;
+    width:340px;
+  object-fit:cover;
+  margin-left:10px;
+  filter: blur(2px); /* Apply blur to the image */
+  position: absolute;
+  z-index:-10;
+
+}
+.thumbnail{
+    font-size: 25px;
+    font-weight: 800px;
+    font-family: League Spartan;
+    color:white;
+    position: absolute;
+    z-index:2;
+    margin-left:50px;
+    margin-top: 10px;
+ padding-top: 30px;
+}
+.play{
+    font-size: 50px;
+    margin-left: 250px;
+    margin-top: 36px;
+    position: absolute;
+    z-index: 3;
+   color:rgb(255,88,62) ;
+}
+.design{
+    /* to reach up to navbar */
+    top: 0%;
+    position: absolute;
+    z-index: -20;
+    height: 150vh;
+    width: 100vh;
+     background: linear-gradient(to bottom,rgb(255,88,62) 40%,rgb(19,160,91) 60% ); 
+    margin-left: 450px;
+    transform:translate(-152px, 3px) rotate(22deg);
+}
