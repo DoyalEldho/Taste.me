@@ -23,7 +23,7 @@ body{
 }
 .logo{
     display: flex;
-    margin-left: 60px;
+    margin-left: 100px;
 }
 .logo_name{
      font-family: kanit;
@@ -35,7 +35,7 @@ body{
 }
 .navitems{
     display: flex;
-  margin-left: 490px;
+  margin-left: 250px;
   margin-top: 16px;
   font-size: 18px;
 }
@@ -51,13 +51,13 @@ body{
   text-underline-offset: 4px; /* Set the gap between the underline and the text */
 } 
 a+a{
-    margin-left: 50px;
+    margin-left: 40px;
  }
  .icon{
     margin: 0px 50px;
  }
  .menu{
-    margin-left: 300px;
+    margin-left: 360px;
     font-size: 25px;
  }
 .intro{
@@ -200,3 +200,4 @@ margin-left: -21px;
     margin-left: 450px;
     transform:translate(-152px, 3px) rotate(22deg);
 }
+
